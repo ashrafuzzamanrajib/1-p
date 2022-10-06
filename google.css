@@ -1,1 +1,188 @@
-# 1-p
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+    font-size: 13px;
+}
+/* section .main .img{
+    margin-top: ;
+} */
+section header ul li a:hover{
+    text-decoration: underline;
+}
+section header ul li a i{
+    width: 30px;
+    height: 30px;
+}
+section header ul li a img:hover{
+    /* border-image: ; */
+    color: aqua;
+}
+
+section header ul li button{
+    background-color: #3279f3;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section .main{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .img{
+    margin-top: -140px;
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchbox .search:hover{
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+
+}
+section .main .searchbox .search{
+    width: 90%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 13px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
+    outline: none;
+    background-color: #f8f9fa;
+}   
+section .main .buttons button:hover{
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+}
+section .main .lang{
+    margin-top: 30px;
+    font-size: 13px;
+    color: rgb(148, 147, 147);
+    font-weight: bold;
+}
+section .main .lang a{
+    color: blue;
+    text-decoration: none;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #F2F2F2;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+section .footer .row ul{
+    display: flex;
+
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(148, 147, 147);
+    margin-right: 25px;
+}
+section .footer .row ul li a:hover{
+    text-decoration: underline;
+}
+/* Desktop View */
+@media (min-width:1080px){
+
+}
+/* Tablet View */
+@media (min-width:769px) and (max-width:1023px){
+    section header ul li button{
+        background-color: crimson;
+    }
+}
+
+
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+    section .main .searchbox .search{
+        width: 71%;
+    }
+    section .main .searchbox .icons{
+        width: 90%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+}
